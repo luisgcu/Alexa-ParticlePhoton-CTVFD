@@ -1,0 +1,24 @@
+{
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "vfd",
+          "type": "LITERAL"
+        },
+        {
+          "name": "motor",
+          "type": "LITERAL"
+        },
+        {
+          "name": "onoff",
+          "type": "LITERAL"
+        }
+      ],
+      "intent": "ParticleIntent"
+    },
+    {
+      "intent": "HelpIntent"
+    }
+  ]
+}

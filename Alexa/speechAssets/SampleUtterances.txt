@@ -1,0 +1,19 @@
+ParticleIntent what is the vfd  {temperature|vfd}
+ParticleIntent what is the motor  {speed|vfd}
+ParticleIntent to turn {on|onoff} {oil pump|motor}
+ParticleIntent to turn {off|onoff} {oil pump |motor}
+ParticleIntent to turn {on|onoff}  {water pump|motor}
+ParticleIntent to turn {off|onoff} {water pump|motor}
+ParticleIntent {temperature|vfd}
+ParticleIntent {speed|vfd}
+HelpIntent help
+HelpIntent help me
+HelpIntent what can I ask you
+HelpIntent get help
+HelpIntent to help
+HelpIntent to help me
+HelpIntent what can you do
+HelpIntent what do you do
+HelpIntent how do I use you
+HelpIntent how can I use you
+HelpIntent what can you tell me
