@@ -1,12 +1,16 @@
-# Particle Photon Modbus Master. 
+# Particle Photon  CT VFD Modbus Master. 
 
-The project basically have been created as draft that allow Control techniques VDF  drives M200, M300, M400, M600  fitted with Modbus RTU 485 interface, to be connected to a Particle -Photon  using   RS485 driver. The sample program provided in this project allow to read several VFD Modbus registers at a configurable poling time. Every time the VFD Register is pooled then is send to particle cloud in json format, and to MQTT server.Two particle function have been programmed allowing to Start/Stop VFD motor , get motor speed, and get VDF temperature.
+The project basically have been created as draft that allow Control techniques VDF  drives M200, M300, M400, M600  fitted with Modbus RTU 485 interface, to be connected to a Particle -Photon  using   RS485 driver. The sample program provided in this project allow to read several VFD Modbus registers at a configurable polling time. Every time the VFD Register are  polled the data is  send to particle cloud in a json format, and also sent to a  [MQTT broker](http://mqtt.org/faq) aswell. Two particle function have been programmed allowing to Start/Stop VFD motor , get motor speed, and get VDF temperature.
+The Project also inlclude a DHT11 Humidity and Temperature sensor, basicaly the sensor is located on the Photon- Modbus PCB, the data colected from the sensor is  sent in json format to particle cloud and to[MQTT broker](http://mqtt.org/faq) if you have one. 
+
 
 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+To get the projet running you need following:
+1-Having the Photon hardwaired to the RS485 driver as specified on the modbus master eagle project.
+2-Had previously setup  your Particle photon account and 
 
 ### Prerequisites
 

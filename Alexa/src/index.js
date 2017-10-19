@@ -3,7 +3,7 @@
  * Particle VFD, (OIL PUMP ON/OFF) , get motor speed (Last mod June 4 2017) V1
  *
  */
- var APP_ID = "amzn1.ask.skill.494c8f28-0159-47fb-bac7-2de173da3127"; //replace with "amzn1.echo-sdk-ams.app.[your-unique-value-here]";
+ var APP_ID = "amzn1.ask.skill.xxxxxxxxx"; //replace with "amzn1.echo-sdk-ams.app.[your-unique-value-here]";
 
 /**
  * The AlexaSkill prototype and helper functions
@@ -62,10 +62,9 @@ Particle.prototype.intentHandlers = {
 		var vfdcommand = "";   //varaliable holding vfd command
 
 		// Replace these with action device id and access token
-		//var deviceid = "37002f000647343138333038";   //TatiX
-		//var accessToken = "b87b98fd1d341d30c5d00039cdb73ec8083d591c"; //Tati X
-		var deviceid = "2d0035001647343337363432";     // Tati 2 Modbus
-		var accessToken = "b87b98fd1d341d30c5d00039cdb73ec8083d591c"; // Tati 2 Modbus
+		
+		var deviceid = "xxxxxxxxx";     // Tati 2 Modbus
+		var accessToken = "xxxxxxxxxx"; // Tati 2 Modbus
 
 		var sparkHst = "api.particle.io";
 
@@ -125,7 +124,7 @@ Particle.prototype.intentHandlers = {
 			makeParticleRequest(sparkHst, sparkPath, args, accessToken, function(resp){
 				var json = JSON.parse(resp);
 
-				console.log("Temperature: " + json.return_value);
+				console.log(" Last updated VFD  Temperature is: " + json.return_value);
 
 				response.tellWithCard("OK, " + motor + " motor turned " + onoff, "Particle", "Particle!");
 				response.ask("Continue?");
